@@ -1,0 +1,192 @@
+# ==================================================
+# Environment files
+# ==================================================
+# .env files (contain sensitive data)
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Database environment files
+.db.env
+.db.*.env
+
+# ==================================================
+# Python
+# ==================================================
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python distributions
+dist/
+build/
+*.egg-info/
+
+# Python virtual environments
+venv/
+env/
+ENV/
+.venv/
+virtualenv/
+
+# ==================================================
+# Jupyter / Notebook
+# ==================================================
+# Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Jupyter runtime files
+.jupyter/
+jupyter_config.json
+.jupyterhub/
+
+# ==================================================
+# SSL Certificates (if self-signed/generated)
+# ==================================================
+# Uncomment if you don't want to commit SSL certificates
+ssl/*.crt
+ssl/*.key
+ssl/*.pem
+
+# ==================================================
+# Docker
+# ==================================================
+# Docker volumes data
+data/
+volumes/
+docker-volume/
+
+# Docker secrets
+docker/secrets/
+.docker-secret/
+
+# Images
+images/
+
+# ==================================================
+# Logs and databases
+# ==================================================
+# Log files
+*.log
+logs/
+jupyterhub.log
+jupyterhub.sqlite
+jupyterhub.sqlite-journal
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# ==================================================
+# IDE and editor files
+# ==================================================
+# VS Code
+.vscode/
+*.code-workspace
+.history/
+
+# IntelliJ / PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Vim
+*.swp
+*.swo
+*~
+*.un~
+
+# Emacs
+*#
+.#*
+\#*#
+*.elc
+
+# Sublime Text
+*.sublime-*
+*.sublime-workspace
+
+# ==================================================
+# OS generated files
+# ==================================================
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.AppleDouble
+.LSOverride
+Icon?
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ==================================================
+# Backup and temporary files
+# ==================================================
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+.cache/
+
+# ==================================================
+# Project specific
+# ==================================================
+# JupyterHub data volume
+jupyterhub-data/
+
+# Docker compose overrides
+docker-compose.override.yml
+
+# Test reports
+test-reports/
+coverage/
+htmlcov/
+.tox/
+.pytest_cache/
+
+# ==================================================
+# Sensitive configuration files
+# ==================================================
+# Configuration files containing secrets
+config/secrets/
+config/*.secret
+config/*.local
+config/local.py
+config/production.py
+
+# ==================================================
+# Note: Keep these files in version control
+# ==================================================
+# !.env.example
+# !.env.template
+# !.db.env.example
+# !docker-compose.yml
+# !docker-compose.db.yml
+# !config/jupyterhub_config.py
+# !ssl/README.md
